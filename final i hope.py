@@ -3,7 +3,7 @@ from tkinter import *
 from PIL import Image,ImageTk
 import random as r
 import mysql.connector as ms
-con=ms.connect(host="localhost",user="root",password="root123")
+con=ms.connect(host="localhost",user="root",password="root")
 cur=con.cursor()
 
 
