@@ -98,6 +98,7 @@ def open_window2():
                 button1=Button(window3, image=c1).place(x = 10, y = 10, height =100, width = 100)
         button1=Button(window3, image=card_back, command = click1).place(x = 10, y = 10, height =100, width = 100)
 
+
         b2 = r.choice(l)
         l.remove(b2)
         c2=PhotoImage(file=b2+'.png')
@@ -139,6 +140,7 @@ def open_window2():
             if flag<=2:
                 button4=Button(window3, image=c4).place(x = 385, y = 10, height =100, width = 100)
         button4=Button(window3, image=card_back, command = click4).place(x = 385, y = 10, height =100, width = 100)
+
 
         b5 = r.choice(l)
         l.remove(b5)
