@@ -6,7 +6,6 @@ import mysql.connector as ms
 con=ms.connect(host="localhost",user="root",password="root")
 cur=con.cursor()
 
-
 flag=0; selected1=''; selected2=''; turn=0; scoreP1=0; scoreP2=0; winner = ' '; pl1=''; pl2=''; set1Error=''; set2Error=''
 
 #making window 1
@@ -140,7 +139,6 @@ def open_window2():
             if flag<=2:
                 button4=Button(window3, image=c4).place(x = 385, y = 10, height =100, width = 100)
         button4=Button(window3, image=card_back, command = click4).place(x = 385, y = 10, height =100, width = 100)
-
 
         b5 = r.choice(l)
         l.remove(b5)
@@ -316,7 +314,7 @@ def open_window2():
         print(b9,b10,b11,b12)
         print(b13,b14,b15,b16)
 
-        #stuff in window 3 [rightside - widgits]
+        #window 3 [rightside - widgits]
         global turn, scoreP1, scoreP2
         players = Label(window3, text = 'PLAYERS', font = ('Calibri', 20, 'bold'), fg = 'black', bg = 'white').place(x = 550, y = 20)
         scores = Label(window3, text = 'SCORES', font = ('Calibri', 20, 'bold'), fg = 'black', bg = 'white').place(x = 715, y = 20)
